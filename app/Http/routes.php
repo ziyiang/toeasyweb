@@ -11,9 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//首页
+Route::get('/', [
+    'uses'=>'IndexController@index',
+    'as'=>'index',
+]);
+
+//服务
+Route::get('service', [
+    'uses'=>'ServiceController@index',
+    'as'=>'service',
+]);
 
 /*
 |--------------------------------------------------------------------------
