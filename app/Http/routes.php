@@ -22,6 +22,11 @@ Route::get('service', [
     'uses'=>'ServiceController@index',
     'as'=>'service',
 ]);
+//发现
+Route::get('news', [
+    'uses'=>'NewsController@index',
+    'as'=>'news',
+]);
 
 /*
 |--------------------------------------------------------------------------
